@@ -14,7 +14,8 @@
 </head>
 <body>
     <div class="container-sm">
-        <nav class="row navbar navbar-expand-custom navbar-mainbgjustify-content-between">
+        <header class="row">
+            <nav class="container-sm navbar navbar-expand-custom navbar-mainbgjustify-content-between p-0">
                 <a class="navbar-brand navbar-logo" href="#"><img class="icon-img" src="../img/refund.png" alt="Icon" />MoneyMy</a>
                 <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-database-fill-down"></i>
@@ -33,50 +34,86 @@
                         </li>
                     </ul>
                 </div>
-        </nav>
+            </nav>
+        </header>
         <main class="row">
             <div class="container" id="main">
-                <div class="row pages" id="anaSayfa"></div>
-                <div class="row pages" id="kayitOl"></div>
-                <div class=" row pages container-fluid py-5 my-5" id="girisYap">
-                    <div class="row main-content">
-                        <div class="col-md-4 text-center company__info">
-                            <img class="img-fluid" src="../img/refund.png" alt="">
-                        </div>
-                        <div class="col-md-8 col-xs-12 col-sm-12 login_form">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col">
-                                        <h2 class="text-center">HOŞ GELDİN MONEY'Lİ</h2>
-                                    </div>
+                <div class="row pages" id="anaSayfa">
+                    <div class="container-fluid">
+                        <div class="row" id="c1">
+                            <div class="col-md-6 py-3">
+                                <p class="w-100 m-0" id="p1">
+                                    Sen de Money'le,
+                                </p>
+                                <p class="w-100 m-0" id="p2">
+                                   <strong>Kazanmak MoneyMy'da</strong>
+                                </p>
+                                <p class="w-100 m-0 py-3" id="p3">
+                                    Mesajlaşır gibi her an ücretsiz para gönder/al, kullandıkça Hediye Para kazan, alışveriş fırsatlarını yakala, ihtiyacın olduğunda anında borç al.
+                                </p>
+                            </div>
+                            <div class="col-md-6 py-3" >
+                                <div class="container-fluid" id="threejs">
                                 </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <form control="" class="form-group">
-                                            <div class="row">
-                                                <input type="text" name="username" id="username" class="form__input" placeholder="Username">
-                                            </div>
-                                            <div class="row">
-                                                <input type="password" name="password" id="password" class="form__input" placeholder="Password">
-                                            </div>
-                                            <div class="row justify-content-center">
-                                                <input type="submit" value="Giriş Yap" class="btn">
-                                            </div>
-                                        </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid my-5">
+                        <div class="col-sm-10 py-3 mx-auto" id="c2">
+                            <div class="row">
+                                <div class="col-sm text-center">Lorem ipsum dolor sit amet.</div>
+                                <div class="col-sm text-center">Lorem ipsum dolor sit amet.</div>
+                                <div class="col-sm text-center">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm text-center">Lorem ipsum dolor sit amet.</div>
+                                <div class="col-sm text-center">Lorem ipsum dolor sit amet.</div>
+                                <div class="col-sm text-center">Lorem ipsum dolor sit amet.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid"></div>
+                </div>
+                <div class="row pages" id="kayitOl"></div>
+                <div class=" row pages" id="girisYap">
+                    <div class="container-fluid mx-0 py-3 my-5">
+                        <div class="row main-content">
+                            <div class="col-md-4 text-center company__info">
+                                <img class="img-fluid" src="../img/refund.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-xs-12 col-sm-12 login_form">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2 class="text-center">HOŞ GELDİN MONEY'Lİ</h2>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <form control="" class="form-group">
+                                                <div class="row">
+                                                    <input type="text" name="username" id="username" class="form__input" placeholder="E-Mail">
+                                                </div>
+                                                <div class="row">
+                                                    <input type="password" name="password" id="password" class="form__input" placeholder="Şifre">
+                                                </div>
+                                                <div class="row justify-content-center">
+                                                    <input type="submit" value="Giriş Yap" class="btn">
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                   
-                
+                </div>               
             </div>
         </main>
         <footer class="row">
             <div class="container">
                 <div class="row">
-                      <div class="col-md-12">
+                      <div class="col-md-12 px-0">
                           <footer class="footer">				
                       <div class="container-fluid">
                           <div class="row">
@@ -157,6 +194,9 @@
         </footer>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r50/three.min.js'></script><script  src="./script.js"></script>
     <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
