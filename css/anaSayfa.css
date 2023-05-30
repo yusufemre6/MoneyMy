@@ -265,8 +265,59 @@ main{
 #c2{
 	background-color: #ff55bb;
 	border-radius: 20px;
+	color: #f8f9fa;
 }
 
+.pink-box-h{
+	font-family:'Courier New', Courier, monospace;
+	letter-spacing: -2px;
+	word-spacing: -14px;
+}
+.pink-box-p{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: larger;
+}
+
+#QR{
+	height: 75%;
+	border-radius: 10%;
+}
+
+.download-link{
+	text-decoration: none;
+	display: block;
+	border-radius: 10px;
+	background-color: #f8f9fa;
+	color: #ff55bb;
+	width: 75%;
+	margin: auto;	
+}
+
+.download-link:hover, .download-link:focus{
+	background-color: #31e1f7;
+	color:#fff;
+	text-decoration: none;
+}
+
+.number{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: #31e1f7;
+}
+
+.social-media-links{
+	background-color: #282a3c;
+	color: #f8f9fa;
+	border-radius: 100%;
+	font-size: 40px;
+}
+
+.social-media-links:hover, .social-media-links:focus{
+	background-color:#31e1f7 ;
+	color:#f8f9fa;
+	text-decoration: none;
+}
 
 /* --------------------------bootstrap-footer-css----------------------------- */
 .footer{
