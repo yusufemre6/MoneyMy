@@ -1,0 +1,155 @@
+  #login-signup{
+    height: 75vh;
+  }
+  
+  .container-sign-in-up{
+    margin-top: 20px;
+    width: 75%;
+    height: 550px;
+    transform: translate(0%, 0%);
+    display: inline-flex; 
+  }
+
+  @media (max-width: 576px){
+    .container-sign-in-up{
+        margin-top: 20px;
+        width: 95%;
+        height: 550px;
+        transform: translate(0%, 0%);
+        display: inline-flex; 
+      }
+  }
+
+  .backbox{  
+    background-color: #31e1f7;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    transform: translate(0,-50%);
+    top:50%;
+    display: inline-flex;
+    border-radius: 20px;
+  }
+  
+  .frontbox{
+    background-color: #ff55bb;
+    border-radius: 20px;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    position: absolute;
+    right:0;
+    margin-right: 3%;
+    margin-left: 3%;
+    transition: right .8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .moving{
+    right:45%;
+  }
+  
+  .loginMsg, .signupMsg{
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  .loginMsg .title,
+  .signupMsg .title{
+    font-weight: 300;
+    font-size: 23px;
+  }
+  
+  .loginMsg p,
+  .signupMsg p {
+    font-weight: 100;
+  }
+  
+  .textcontent{
+    color:#ff55bb;
+    margin-top:144px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .loginMsg button,
+  .signupMsg button {
+    background-color: #282a3c;
+    border: 2px solid #ff55bb;
+    border-radius: 10px;
+    color:white;
+    font-size: 22px;
+    box-sizing: content-box;
+    width: 100px;
+    padding:10px;
+    margin-top: 20px;
+  }
+  
+  /* front box content*/
+  .login, .signup{
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .login h2,
+  .signup h2 {
+    color: #31e1f7;
+    font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .inputbox{
+    margin-top:30px; 
+  }
+  .login input, 
+  .signup input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    border: 2px solid #31e1f7;
+    margin-bottom:20px;
+    font-size: 15px;
+  }
+  
+  .login button,
+  .signup button{
+    background-color: #31e1f7;
+    border: 2px solid white;
+    width: 100px;
+    color:#ff55bb;
+    font-size: 15px;
+    box-sizing: content-box;
+    padding:5px;
+    border-radius: 10px;
+    position: absolute;
+    transform: translate(-50%,0%);
+    cursor: pointer;
+  }
+  
+  /* Fade In & Out*/
+  .login p {
+    cursor: pointer;
+    color:#31e1f7;
+    font-size:15px;
+  }
+  
+  .loginMsg, .signupMsg{
+    /*opacity: 1;*/
+    transition: opacity .8s ease-in-out;
+  }
+  
+  .visibility{
+    opacity: 0;
+  }
+  
+  .hide{
+    display: none;
+  }

@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
     <link rel="stylesheet" href="../css/anaSayfa.css">
-    <link rel="stylesheet" href="../css/kayitOl.css">
-    <link rel="stylesheet" href="../css/girisYap.css">
+    <link rel="stylesheet" href="../css/signUp-In.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="../img/refund.png" type="image/x-icon">
 </head>
@@ -24,13 +23,13 @@
                     <ul class="navbar-nav ml-auto">
                         <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
                         <li class="nav-item active">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showForm('anaSayfa')" ><i class="bi bi-house"></i>Ana Sayfa</a>
+                            <a class="nav-link" id="anaSayfaLink" href="javascript:void(0);" onclick="showForm('anaSayfa')" ><i class="bi bi-house"></i>Ana Sayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showForm('kayitOl')" ><i class="bi bi-clipboard-check"></i>Money'li Ol</a>
+                            <a class="nav-link" id="kayitOlLink" href="javascript:void(0);" onclick="showForm('login-signup')" ><i class="bi bi-clipboard-check"></i>Money'li Ol</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="javascript:void(0);" onclick="showForm('girisYap')" ><i class="bi bi-box-arrow-in-right"></i>Giriş Yap</a>
+                            <a class="nav-link" id="girisYapLink" href="javascript:void(0);" onclick="showForm('login-signup')" ><i class="bi bi-box-arrow-in-right"></i>Giriş Yap</a>
                         </li>
                     </ul>
                 </div>
@@ -120,27 +119,27 @@
                             <p class="h1 text-center" style="font-family: 'Courier New', Courier, monospace; letter-spacing: -1px;"><strong>Sosyal Medya Hesaplarımız</strong></p>
                         </div>
                         <div class="row py-2 justify-content-center align-items-start">
-                            <div class="col-md-1 text-center px-0 ">
+                            <div class="col-md-1 text-center px-0 py-3 ">
                                 <a href="https://www.instagram.com/naysapptr/" target="_blank" class="social-media-links p-3">
                                     <i class="bi mx-0 bi-instagram"></i>
                                 </a>
                             </div>
-                            <div class="col-md-1 text-center px-0 ">
+                            <div class="col-md-1 text-center px-0 py-3 ">
                                 <a href="https://twitter.com/naysapptr" target="_blank" class="social-media-links p-3">
                                     <i class="bi mx-0 bi-twitter"></i>
                                 </a>
                             </div>
-                            <div class="col-md-1 text-center px-0">
+                            <div class="col-md-1 text-center px-0 py-3">
                                 <a href="https://www.facebook.com/naysapptr" target="_blank" class="social-media-links  p-3">
                                     <i class="bi mx-0 bi-facebook"></i>
                                 </a>
                             </div>
-                            <div class="col-md-1 text-center px-0 ">
+                            <div class="col-md-1 text-center px-0 py-3 ">
                                 <a href="https://www.youtube.com/channel/UCjzhsp5KKcSIPqZXDBIkU-w" target="_blank" class="social-media-links  p-3">
                                     <i class="bi mx-0 bi-youtube"></i>
                                 </a>
                             </div>
-                            <div class="col-md-1 text-center px-0 ">
+                            <div class="col-md-1 text-center px-0 py-3 ">
                                 <a href="https://www.tiktok.com/@naysapptr" target="_blank" class="social-media-links  p-3">
                                     <i class="bi mx-0 bi-tiktok"></i>
                                 </a>
@@ -148,46 +147,63 @@
                         </div>
                     </div>
                 </div>
-                <div class="row pages" id="kayitOl"></div>
-                <div class=" row pages" id="girisYap">
-                    <div class="container-fluid mx-0 py-3 my-5">
-                        <div class="row main-content">
-                            <div class="col-md-4 text-center company__info">
-                                <img class="img-fluid" src="../img/refund.png" alt="">
+                <div class="row pages text-center" id="login-signup">
+                    <div class="container-sign-in-up">
+                        <div class="backbox">
+                          <div class="loginMsg">
+                            <div class="textcontent">
+                              <p class="title">Henüz bir hesabınız yok mu?</p>
+                              <p>Güvenli bir şekilde kayıt olmak için butona basın.</p>
+                              <button id="switch1">Kayıt Ol</button>
                             </div>
-                            <div class="col-md-8 col-xs-12 col-sm-12 login_form">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h2 class="text-center">HOŞ GELDİN MONEY'Lİ</h2>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <form control="" class="form-group">
-                                                <div class="row">
-                                                    <input type="text" name="username" id="username" class="form__input" placeholder="E-Mail">
-                                                </div>
-                                                <div class="row">
-                                                    <input type="password" name="password" id="password" class="form__input" placeholder="Şifre">
-                                                </div>
-                                                <div class="row justify-content-center">
-                                                    <input type="submit" value="Giriş Yap" class="btn">
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
+                          </div>
+                          <div class="signupMsg visibility">
+                            <div class="textcontent">
+                              <p class="title">Zaten hesabınız var mı?</p>
+                              <p>Giriş yapmak için butona basın.</p>
+                              <button id="switch2">Giriş Yap</button>
                             </div>
+                          </div>
                         </div>
-                    </div>
-                </div>               
+                        <!-- backbox -->
+                    
+                        <div class="frontbox">
+                          <div class="login">
+                            <form action="">
+                                <h2>GİRİŞ YAP</h2>
+                                <div class="inputbox">
+                                <input type="text" name="email" placeholder="  E-POSTA">
+                                <input type="password" name="password" placeholder="  ŞİFRE">
+                                </div>
+                                <p>ŞİFREMİ UNUTTUM</p>
+                                <button>GİRİŞ YAP</button>
+                            </form>
+                          </div>
+                    
+                          <div class="signup hide">
+                            <form action="">
+                                <h2>KAYIT OL</h2>
+                                <div class="inputbox">
+                                    <input type="text" name="name" placeholder="  İSİM">
+                                    <input type="text" name="surname" placeholder="  SOYİSİM">
+                                    <input type="text" name="email" placeholder="  E-POSTA">
+                                    <input type="tel" name="phonenumber" id="" placeholder="TELEFON NUMARASI">
+                                    <input type="password" name="password" placeholder="  ŞİFRE">
+                                </div>
+                                <button>KAYIT OL</button>
+                            </form>
+                          </div>
+                    
+                        </div>
+                        <!-- frontbox -->
+                      </div>
+                </div>             
             </div>
         </main>
         <footer class="row">
             <div class="container">
                 <div class="row">
-                      <div class="col-md-12 px-0">
+                      <div class="col-md-12 px-0 py-3">
                           <footer class="footer">				
                       <div class="container-fluid">
                           <div class="row">
@@ -268,6 +284,7 @@
         </footer>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.2/dat.gui.min.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r50/three.min.js'></script><script  src="./script.js"></script>
@@ -276,8 +293,7 @@
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
     <script  src="../javascript/script.js"></script>
     <script  src="../javascript/anaSayfa.js"></script>
-    <script  src="../javascript/girisYap.js"></script>
-    <script  src="../javascript/kayitOl.js"></script>
+    <script  src="../javascript/signUp-In.js"></script>
 
 </body>
 </html>
