@@ -23,13 +23,13 @@
                     <ul class="navbar-nav ml-auto">
                         <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
                         <li class="nav-item active">
-                            <a class="nav-link" id="anaSayfaLink" href="javascript:void(0);" onclick="showForm('anaSayfa')" ><i class="bi bi-house"></i>Ana Sayfa</a>
+                            <a class="nav-link" id="anaSayfaLink" href="javascript:void(0);" onclick="showForm('anaSayfa','anaSayfaLink')" ><i class="bi bi-house"></i>Ana Sayfa</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="kayitOlLink" href="javascript:void(0);" onclick="showForm('login-signup')" ><i class="bi bi-clipboard-check"></i>Money'li Ol</a>
+                            <a class="nav-link" id="kayitOlLink" href="javascript:void(0);" onclick="showForm('login-signup','kayitOlLink')" ><i class="bi bi-clipboard-check"></i>Money'li Ol</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="girisYapLink" href="javascript:void(0);" onclick="showForm('login-signup')" ><i class="bi bi-box-arrow-in-right"></i>Giriş Yap</a>
+                            <a class="nav-link" id="girisYapLink" href="javascript:void(0);" onclick="showForm('login-signup','girisYapLink')" ><i class="bi bi-box-arrow-in-right"></i>Giriş Yap</a>
                         </li>
                     </ul>
                 </div>
@@ -154,10 +154,10 @@
                             <div class="textcontent">
                               <p class="title">Henüz bir hesabınız yok mu?</p>
                               <p>Güvenli bir şekilde kayıt olmak için butona basın.</p>
-                              <button id="switch1">Kayıt Ol</button>
+                              <button id="switch1">Money'li Ol</button>
                             </div>
                           </div>
-                          <div class="signupMsg visibility">
+                          <div class="signupMsg">
                             <div class="textcontent">
                               <p class="title">Zaten hesabınız var mı?</p>
                               <p>Giriş yapmak için butona basın.</p>
@@ -180,7 +180,7 @@
                             </form>
                           </div>
                     
-                          <div class="signup hide">
+                          <div class="signup">
                             <form action="">
                                 <h2>KAYIT OL</h2>
                                 <div class="inputbox">
@@ -190,7 +190,7 @@
                                     <input type="tel" name="phonenumber" id="" placeholder="TELEFON NUMARASI">
                                     <input type="password" name="password" placeholder="  ŞİFRE">
                                 </div>
-                                <button>KAYIT OL</button>
+                                <button>MONEY'Lİ OL</button>
                             </form>
                           </div>
                     
@@ -293,7 +293,6 @@
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
     <script  src="../javascript/script.js"></script>
     <script  src="../javascript/anaSayfa.js"></script>
-    <script  src="../javascript/signUp-In.js"></script>
 
 </body>
 </html>

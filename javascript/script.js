@@ -40,6 +40,29 @@ $(".navbar-toggler").click(function(){
 });
 
 
+var $loginMsg = $('.loginMsg'),
+$login = $('.login'),
+$signupMsg = $('.signupMsg'),
+$signup = $('.signup'),
+$frontbox = $('.frontbox');
+
+$('#switch1').on('click', function() {
+$loginMsg.addClass("visibility");
+$frontbox.addClass("moving");
+$signupMsg.removeClass("visibility");
+
+$signup.removeClass('hide');
+$login.addClass('hide');
+})
+
+$('#switch2').on('click', function() {
+$loginMsg.removeClass("visibility");
+$frontbox.removeClass("moving");
+$signupMsg.addClass("visibility");
+
+$signup.addClass('hide');
+$login.removeClass('hide');
+})
 
 // --------------add active class-on another-page move----------
 jQuery(document).ready(function($){
@@ -56,7 +79,7 @@ jQuery(document).ready(function($){
 	target.parent().addClass('active');
 });
 
-function showForm(formId) {
+function showForm(formId,linkId) {
 	var forms = document.getElementsByClassName("pages");
 	
 	for (var i = 0; i < forms.length; i++) {
@@ -65,9 +88,19 @@ function showForm(formId) {
 	
 	var form = document.getElementById(formId);
 	form.style.display = "block";
+	if(linkId=='girisYapLink'){
+		$('#switch2').click()
+	}
+	else if(linkId=='kayitOlLink'){  
+		$('#switch1').click()
+	}
   }
   
   // Sayfa başladığında "Ana Sayfa" formunu göster
   document.addEventListener("DOMContentLoaded", function() {
 	showForm("anaSayfa");
   });
+
+
+
+
