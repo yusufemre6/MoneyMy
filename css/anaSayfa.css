@@ -381,22 +381,48 @@ main{
 	border-radius: 10px;
     padding: 30px 35px;
 }
+.cards .card .brand{
+    height: 40%;
+}
+.cards .card .head{
+    height: 15%;
+}
+.cards .card .brand{
+    height: 30%;
+}
+.cards .card .brand{
+    height: 15%;
+}
 
 
-#s1:checked~.cards #slide4,
-#s2:checked~.cards #slide5,
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide6,
+#s3:checked~.cards #slide7,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2,
+#s6:checked~.cards #slide3,
+#s7:checked~.cards #slide4 {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 35%);
+    transform: translate3d(-105%, 0, -300px);
+}
+#s1:checked~.cards #slide6,
+#s2:checked~.cards #slide7,
 #s3:checked~.cards #slide1,
 #s4:checked~.cards #slide2,
-#s5:checked~.cards #slide3 {
+#s5:checked~.cards #slide3,
+#s6:checked~.cards #slide4,
+#s7:checked~.cards #slide5 {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-70%, 0, -220px);
 }
 
-#s1:checked~.cards #slide5,
+#s1:checked~.cards #slide7,
 #s2:checked~.cards #slide1,
 #s3:checked~.cards #slide2,
 #s4:checked~.cards #slide3,
-#s5:checked~.cards #slide4 {
+#s5:checked~.cards #slide4,
+#s6:checked~.cards #slide5,
+#s7:checked~.cards #slide6 {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);   
 }
@@ -405,7 +431,9 @@ main{
 #s2:checked~.cards #slide2,
 #s3:checked~.cards #slide3,
 #s4:checked~.cards #slide4,
-#s5:checked~.cards #slide5 {
+#s5:checked~.cards #slide5,
+#s6:checked~.cards #slide6,
+#s7:checked~.cards #slide7 {
     box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
     transform: translate3d(0, 0, 0);
 }
@@ -414,7 +442,9 @@ main{
 #s2:checked~.cards #slide3,
 #s3:checked~.cards #slide4,
 #s4:checked~.cards #slide5,
-#s5:checked~.cards #slide1 {
+#s5:checked~.cards #slide6,
+#s6:checked~.cards #slide7,
+#s7:checked~.cards #slide1{
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(35%, 0, -120px);
 }
@@ -422,10 +452,22 @@ main{
 #s1:checked~.cards #slide3,
 #s2:checked~.cards #slide4,
 #s3:checked~.cards #slide5,
-#s4:checked~.cards #slide1,
-#s5:checked~.cards #slide2 {
+#s4:checked~.cards #slide6,
+#s5:checked~.cards #slide7,
+#s6:checked~.cards #slide1,
+#s7:checked~.cards #slide2{
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
     transform: translate3d(70%, 0, -220px);
+}
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide6,
+#s4:checked~.cards #slide7,
+#s5:checked~.cards #slide1,
+#s6:checked~.cards #slide2,
+#s7:checked~.cards #slide3{
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 35%);
+    transform: translate3d(105%, 0, -300px);
 }
 /* -------------------------------------------------------------------------------- */
 
