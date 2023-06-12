@@ -84,7 +84,7 @@
     color:white;
     font-size: 22px;
     box-sizing: content-box;
-    width: 100px;
+    width: 120px;
     padding:10px;
     margin-top: 20px;
   }
@@ -124,6 +124,7 @@
     background-color: #31e1f7;
     border: 2px solid white;
     width: 100px;
+    height: 30px;
     color:#ff55bb;
     font-size: 15px;
     box-sizing: content-box;

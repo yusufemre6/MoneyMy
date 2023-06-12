@@ -88,8 +88,6 @@ function onDocumentMouseMove(event) {
     mouseY = ( event.clientY - windowHalfY );
 }
 
-
-
 // Render
 function render() {
   requestAnimationFrame( render);
@@ -102,3 +100,51 @@ function render() {
 }
 
 render();
+
+const slider = document.querySelector('.slider');
+const cardContainer = document.querySelector('.card-container');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+const cards = ['Kart 1', 'Kart 2', 'Kart 3', 'Kart 4', 'Kart 5', 'Kart 6', 'Kart 7', 'Kart 8', 'Kart 9', 'Kart 10'];
+let currentIndex = 0;
+let slideCount = 4;
+
+function showCards(index) {
+  for (let i = index; i < index + slideCount; i++) {
+    if (i >= cards.length) break;
+    const card = document.createElement('div');
+    card.className = 'card';
+    cardContainer.appendChild(card);
+  }
+}
+
+function updateSlider() {
+  if (window.innerWidth <= 350) {
+    slideCount = 1;
+  } else {
+    slideCount = 4;
+  }
+  showCards(currentIndex);
+}
+
+function nextSlide() {
+  currentIndex++;
+  if (currentIndex + slideCount > cards.length) {
+    currentIndex = cards.length - slideCount;
+  }
+  showCards(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  }
+  showCards(currentIndex);
+}
+
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+window.addEventListener('resize', updateSlider);
+
+updateSlider();
